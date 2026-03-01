@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bite Basket</title>
+    <link rel="stylesheet" href="Style.css" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header class="Title_section">
+      <div class="row">
+        <div class="col-md-2">
+          <!--I created a logo using Gemini AI-->
+          <img
+            src="Images/BiteBasket_logo.png"
+            alt="Bite Basket logo"
+            id="Bite_Basket_logo"
+          />
+        </div>
+
+        <div class="col-md-8">
+          <h1 id="Heading1">
+            <span style="color: rgb(231, 142, 73)">BITE</span>
+            <span style="color: rgb(179, 187, 71)">BASKET</span>
+          </h1>
+          <!--This is to display the amount of orders that have an status of incomplete-->
+          <p id="Active_orders">Active Orders:</p>
+        </div>
+
+        <div class="col-md-2"></div>
+      </div>
+    </header>
+
+    <section class="Kitchen">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 id="Heading2">Main Bite In Your Basket</h1>
+          <h3 id="Subheading">Let us choose your meal!</h3>
+        </div>
+      </div>
+
+      <div class="row" id="Label_input">
+        <div class="col-md-12">
+          <label for="User_ingredient"
+            >What ingredient would you like in your meal?</label
+          >
+          <br />
+          <input name="Ingredient" id="User_ingredient" type="text" />
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <button id="Submit_button">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <!--This is for displaying the details of the order to the user-->
+          <p id="Order_submission_verdict"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="Order_board">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 id="Heading2">Order Board</h1>
+          <h3 id="Subheading">Keep track of your meal!</h3>
+        </div>
+      </div>
+
+      <div class="Orders_display">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Baskets:</h3>
+          </div>
+        </div>
+
+        <!--Rows and columns of: Order #: [Meal Name]-->
+        <div class="Container"></div>
+      </div>
+
+      <div class="row" id="Label_input">
+        <div class="col-md-12">
+          <label for="Order_number">
+            Has your order been completed? Enter your order number!
+          </label>
+          <br />
+          <input name="Order_number" id="Order_number" type="text" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <button id="Complete_button">Complete</button>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="BiteBasket.js"></script>
+  </body>
+</html>
