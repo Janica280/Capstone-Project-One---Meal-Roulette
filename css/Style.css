@@ -1,1 +1,84 @@
+/*Styling for sections*/
+.Title_section {
+  background-color: rgb(205, 215, 216);
+}
 
+.Orders_display {
+  text-align: center;
+  border: solid black 0.4vh;
+  background-color: rgb(205, 215, 216);
+  margin: 5vh;
+}
+
+/*Styling for images*/
+#Bite_Basket_logo {
+  height: 25vh;
+  width: 25vh;
+  border: solid black 0.5vh;
+  margin: 1vh;
+}
+
+/*Whenever the screen is smaller than 860 pixels, the logo image will be smaller*/
+@media (max-width: 860px) {
+  #Bite_Basket_logo {
+    height: 20vh;
+    width: 20vh;
+    border: solid black 0.4vh;
+  }
+}
+
+/*Whenever the screen is smaller than 830 pixels, the logo image will not be shown*/
+@media (max-width: 830px) {
+  #Bite_Basket_logo {
+    display: none;
+  }
+}
+
+/*Styling for headings*/
+#Heading1 {
+  -webkit-text-stroke-width: 0.5vh;
+  -webkit-text-stroke-color: black;
+  text-align: center;
+  font-size: 15vh;
+}
+
+#Heading2 {
+  text-align: center;
+  background-color: rgb(179, 187, 71);
+  border-top: solid black 0.4vh;
+}
+
+#Subheading {
+  color: rgb(231, 142, 73);
+  text-align: center;
+}
+
+/*Styling for inputs*/
+#Label_input {
+  text-align: center;
+}
+
+/*Styling for individual items*/
+#Active_orders {
+  padding: 0.5vh;
+  border: solid black 0.4vh;
+  background-color: white;
+  width: 30vh;
+  margin: auto;
+  margin-bottom: 1vh;
+}
+
+/*making buttons stand out more*/
+#Complete_button {
+  float: right;
+  margin: 1vh;
+  background-color: rgb(231, 142, 73);
+  font-weight: bold;
+}
+
+#Submit_button {
+  float: right;
+  margin: 1vh;
+  background-color: rgb(231, 142, 73);
+  font-weight: bold;
+}
